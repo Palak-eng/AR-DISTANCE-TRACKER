@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+#overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 100;
+    pointer-events: none; /* let taps pass through to the canvas for AR hit-testing */
+}
+
+#overlay h1 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+#distance {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+#instructions {
+    display: none;
+    font-size: 14px;
+    max-width: 320px;
+    line-height: 1.4;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    pointer-events: auto; /* buttons must remain tappable */
+}
+
+#startAR {
+    background: #00c853;
+    color: white;
+}
+
+#resetBtn {
+    display: none;
+    background: #444;
+    color: white;
+}

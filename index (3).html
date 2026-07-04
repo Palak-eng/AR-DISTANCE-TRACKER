@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebXR Distance Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="overlay">
+        <h1>WebXR Distance Tracker</h1>
+
+        <div id="distance">
+            Distance: 0.00 m
+        </div>
+
+        <p id="instructions">
+            Point your phone at a flat surface. Tap the screen to drop a point. Place two points to measure the distance between them.
+        </p>
+
+        <button id="startAR">
+            Start AR
+        </button>
+
+        <button id="resetBtn">
+            Reset
+        </button>
+    </div>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.167.1/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.167.1/examples/jsm/"
+        }
+    }
+    </script>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
